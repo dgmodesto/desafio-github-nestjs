@@ -5,6 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build -t dgmodesto/desafio-maratona-ci-image .
-      - run: docker run -it -p 3000:3000 dgmodesto/desafio-maratona-ci-image npm run test
-      
+      - run: docker-compose up -d
+      - run: docker-compose exec desafio-ci-maratona npm run test
