@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  app:
+    build: .
+    container_name: desafio-ci-maratona
+    entrypoint: ./.docker/entrypoint.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/app
+    tty: true
