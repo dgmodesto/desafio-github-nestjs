@@ -5,7 +5,6 @@ services:
   app:
     build: .
     container_name: desafio-ci-maratona
-    entrypoint: ./.docker/entrypoint.sh
     ports:
       - 3000:3000
     volumes:
