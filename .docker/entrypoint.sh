@@ -1,8 +1,4 @@
-#!/bin/bash
-#if [ ! -f ".env" ]; then
-#  cp .env.example .env
-#fi
-
+ #!/bin/bash
+cd /home/node/app
 npm install
-
-npm start
+npm run start:dev
