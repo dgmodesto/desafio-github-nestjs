@@ -1,0 +1,4 @@
+*.ts @AllanGregory
+*.json @dgmodesto
+/.docker/ @dgmodesto
+Dockerfile @dgmodesto
